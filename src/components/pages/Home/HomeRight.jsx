@@ -19,7 +19,7 @@ export default function HomeRight() {
 const HomeRightStyled = styled.div`
   text-align: center;
   font-family: 'Satisfy', cursive;
-  background: #FFBB64;
+  
 
   .top-description {
     font-size: 30px;
@@ -30,5 +30,10 @@ const HomeRightStyled = styled.div`
     h2 {
       margin-top: 0;
     }
+  }
+
+  p{
+    font-size: 20px;
+
   }
 `

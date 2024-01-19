@@ -34,12 +34,17 @@ export default function HomeCarousel() {
   )
 }
 const HomeCarouselStyled = styled.div`
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  cursor: pointer;
+  :hover {
+    
+  }
   img {
     width: 500px;
    height: 300px;
    object-fit: fill;
   }
-  width: 500px;
-  height: 300px;
-  margin: auto;
+
 `;
