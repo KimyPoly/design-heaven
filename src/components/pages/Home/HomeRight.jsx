@@ -1,5 +1,10 @@
+import styled from 'styled-components'
+
 export default function HomeRight() {
   return (
-    <div>HomeRight</div>
+    <HomeRightStyled>HomeRight</HomeRightStyled>
   )
 }
+const HomeRightStyled = styled.div`
+   background: green;
+`
