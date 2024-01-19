@@ -17,5 +17,7 @@ const HomeStyled = styled.div`
   height: 100vh;
   width: auto;
   margin: 0;
+  background: linear-gradient(#FF9843, #e66465);
+  color: white;
 
-`;
+`

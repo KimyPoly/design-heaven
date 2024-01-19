@@ -8,7 +8,7 @@ export default function HomeLeft() {
         <div className="inner-div"></div>
       </div>
       <div className="low-div">
-      <div className="inner-div"></div>
+        <div className="inner-div"></div>
         <div className="inner-div"><p>Heaven</p></div>
       </div>
     </HomeLeftStyled>
@@ -21,27 +21,32 @@ const HomeLeftStyled = styled.div`
   object-fit: cover;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  font-family: 'Satisfy', cursive;
-  color: white;
+  font-family: 'Rubik Burned', system-ui;
   font-weight: 400;
   font-size: 60px;
 
   .hight-div {
-    border: solid 3px black;
+    border-bottom: solid 3px #f27e56;
+    /* border-top: none;
+    border-right: none;
+    border-left: none; */
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
   .low-div {
-    border: solid 3px black;
+    border-top: solid 3px #f27e56;
+    /* border-bottom: none;
+    border-right: none;
+    border-left: none; */
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
   .inner-div {
-    border: solid 3px black;
+    border: solid 3px #e66465;
     padding: 20px;
   }
 
   p {
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 3px #FFB996;
   }
 `;
