@@ -27,17 +27,17 @@ const HomeLeftStyled = styled.div`
   font-size: 60px;
 
   .hight-div {
-    border: solid 3px black;
+    border: solid 3px #FFBB64;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
   .low-div {
-    border: solid 3px black;
+    border: solid 3px #FFBB64;
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
   .inner-div {
-    border: solid 3px black;
+    border: solid 3px #FFBB64;
     padding: 20px;
   }
 
