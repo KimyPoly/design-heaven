@@ -8,7 +8,7 @@ export default function HomeLeft() {
         <div className="inner-div"></div>
       </div>
       <div className="low-div">
-      <div className="inner-div"></div>
+        <div className="inner-div"></div>
         <div className="inner-div"><p>Heaven</p></div>
       </div>
     </HomeLeftStyled>
