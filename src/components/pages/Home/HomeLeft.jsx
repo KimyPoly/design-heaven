@@ -4,12 +4,12 @@ export default function HomeLeft() {
   return (
     <HomeLeftStyled>
       <div className="hight-div">
-        <div className="inner-div"><p>Design</p></div>
-        <div className="inner-div"></div>
+        <div className="inner-div-top"><p>Design</p></div>
+        <div className="inner-div-top"></div>
       </div>
       <div className="low-div">
-        <div className="inner-div"></div>
-        <div className="inner-div"><p>Heaven</p></div>
+        <div className="inner-div-bottom"></div>
+        <div className="inner-div-bottom"><p>Heaven</p></div>
       </div>
     </HomeLeftStyled>
   )
@@ -41,8 +41,17 @@ const HomeLeftStyled = styled.div`
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
-  .inner-div {
-    border: solid 3px #e66465;
+  .inner-div-top {
+    border: solid 6px #f27e56;
+    border-top: none;
+    border-left: none;
+    padding: 20px;
+  }
+  .inner-div-bottom {
+    border: solid 6px #e66465;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
     padding: 20px;
   }
 
