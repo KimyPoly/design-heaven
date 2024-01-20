@@ -16,7 +16,7 @@ const NavbarStyled = styled.div`
   align-items: center;
   justify-content: center;
   font-family: 'Rubik Burned', system-ui;
-  font-size: 3em;
+  font-size: 2.5em;
   color: #f27e56;
   border: 1px solid #f27e56;
 `
