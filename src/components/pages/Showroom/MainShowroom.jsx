@@ -10,5 +10,5 @@ export default function MainShowroom() {
 const MainShowroomStyled = styled.div`
   background-color: teal;
   width: 100%;
-  height: 50%;
+  height: 80%;
 `;
