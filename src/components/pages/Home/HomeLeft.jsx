@@ -27,17 +27,11 @@ const HomeLeftStyled = styled.div`
 
   .hight-div {
     border-bottom: solid 3px #f27e56;
-    /* border-top: none;
-    border-right: none;
-    border-left: none; */
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
   .low-div {
     border-top: solid 3px #f27e56;
-    /* border-bottom: none;
-    border-right: none;
-    border-left: none; */
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
@@ -48,10 +42,7 @@ const HomeLeftStyled = styled.div`
     padding: 20px;
   }
   .inner-div-bottom {
-    border: solid 6px #e66465;
-    border-bottom: none;
-    border-top: none;
-    border-left: none;
+    border-right: solid 6px #e66465;
     padding: 20px;
   }
 
