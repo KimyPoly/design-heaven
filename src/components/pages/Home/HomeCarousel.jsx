@@ -2,17 +2,25 @@ import styled from 'styled-components'
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-
+// import { useNavigate } from "react-router-dom"
 export default function HomeCarousel() {
 
   const settings = {
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-  };
+    arrows: false,
+  }
+
+  //const navigate = useNavigate()
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    //navigate('')
+  }
 
   return (
     <HomeCarouselStyled>
@@ -27,7 +35,6 @@ export default function HomeCarousel() {
         <div>
           <img src="https://th.bing.com/th/id/OIG.pMGDbTEkYlIXS1vI9L2c?pid=ImgGn" alt="Image 2" />
         </div>
-
       </Slider>
 
     </HomeCarouselStyled>
@@ -38,13 +45,24 @@ const HomeCarouselStyled = styled.div`
   height: 300px;
   margin: auto;
   cursor: pointer;
-  :hover {
-    
+  transition: border-radius 1s;
+  border: 3px solid;
+
+  &:hover {
+    border-radius: 50px;
+    opacity: 0.8;
   }
+
   img {
-    width: 500px;
+   width: 500px;
    height: 300px;
    object-fit: fill;
+   transition: border-radius 1s;
+
+   &:hover {
+    border-radius: 50px;
+   }
+
   }
 
 `;
