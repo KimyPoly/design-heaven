@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-// import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 export default function HomeCarousel() {
 
   const settings = {
@@ -15,11 +15,11 @@ export default function HomeCarousel() {
     arrows: false,
   }
 
-  //const navigate = useNavigate()
+  const navigate = useNavigate()
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    //navigate('')
+    navigate('')
   }
 
   return (
