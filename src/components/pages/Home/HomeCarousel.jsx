@@ -46,10 +46,10 @@ const HomeCarouselStyled = styled.div`
   margin: auto;
   cursor: pointer;
   transition: border-radius 1s;
-  border: 3px solid;
+  border-radius: 50px;
 
   &:hover {
-    border-radius: 50px;
+
     opacity: 0.8;
   }
 
@@ -58,11 +58,7 @@ const HomeCarouselStyled = styled.div`
    height: 300px;
    object-fit: fill;
    transition: border-radius 1s;
-
-   &:hover {
-    border-radius: 50px;
-   }
-
+   border-radius: 50px;
   }
 
-`;
+`

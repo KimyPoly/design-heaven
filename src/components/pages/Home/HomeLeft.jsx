@@ -3,14 +3,7 @@ import styled from 'styled-components'
 export default function HomeLeft() {
   return (
     <HomeLeftStyled>
-      <div className="hight-div">
-        <div className="inner-div-top"><p>Design</p></div>
-        <div className="inner-div-top"></div>
-      </div>
-      <div className="low-div">
-        <div className="inner-div-bottom"></div>
-        <div className="inner-div-bottom"><p>Heaven</p></div>
-      </div>
+       <p>Design Heaven</p>
     </HomeLeftStyled>
   )
 }
@@ -19,34 +12,42 @@ const HomeLeftStyled = styled.div`
   background-position: center;
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://th.bing.com/th/id/OIG.DPIHWO5gZ_qLYfLuRs.8?pid=ImgGn);
   object-fit: cover;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  align-items: center;
   font-family: 'Rubik Burned', system-ui;
   font-weight: 400;
   font-size: 60px;
 
-  .hight-div {
-    border-bottom: solid 3px #f27e56;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .low-div {
-    border-top: solid 3px #f27e56;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-  .inner-div-top {
-    border: solid 6px #f27e56;
-    border-top: none;
-    border-left: none;
-    padding: 20px;
-  }
-  .inner-div-bottom {
-    border-right: solid 6px #e66465;
-    padding: 20px;
-  }
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
 
   p {
-    text-shadow: 1px 1px 3px #FFB996;
+  text-align: center;
+  margin: 0;
+  font-size: 2em;
+
+  background-image: linear-gradient(
+    -225deg,
+    teal 0%,
+    #ff1361 29%,
+    #e66465 67%,
+    #f27e56 100%
+  );
+
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+
+  @keyframes textclip {
+  to {
+    background-position: 200% center;
   }
-`;
+ }
+}
+`

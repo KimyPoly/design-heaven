@@ -10,7 +10,7 @@ export default function HomeRight() {
       </div>
       <p className='description'>
         Discover our special selection of furnitures.
-        Put more glitter in your life !
+        Put more ✨glitters✨ in your life !
       </p>
       <HomeCarousel/>
     </HomeRightStyled>
@@ -23,19 +23,24 @@ const HomeRightStyled = styled.div`
 
   .top-description {
     font-size: 30px;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 
     h1 {
       margin-bottom: 0;
-      box-shadow: 100px 16px teal;
+      box-shadow: 0 16px #e66465;
+      font-size: 2.5em;
+
     }
     h2 {
       margin-top: 0;
+      margin-bottom: 0;
+      box-shadow: 0 16px #f27e56 ;
     }
   }
 
   p{
-    font-size: 20px;
+    font-size: 22px;
     color: teal;
+    margin: 0;
   }
 `
