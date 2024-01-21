@@ -13,20 +13,24 @@ export default function ItemDetails() {
 
   return (
     <ItemDetailsStyled>
-      <Navbar/>
-     <div className='main-item'>
+      {/* <Navbar/> */}
+      <div className='main-item'>
        <ItemLeft img={selectedItem.img}/>
-       <ItemRight/>
-     </div>
+       <ItemRight
+        title={selectedItem.title}
+        price={selectedItem.price}
+        description={selectedItem.description}
+       />
+      </div>
     </ItemDetailsStyled>
   )
 }
 const ItemDetailsStyled = styled.div`
-  height: 90hv;
+  height: 100vh;
 
   .main-item {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
   }
 
 `;

@@ -10,11 +10,13 @@ export default function ItemLeft({img}) {
 
 const ItemLeftStyled = styled.div`
   height: 100vh;
-  width: 8em;
+  
   img {
-    
-
-
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
   }
 
 `;
