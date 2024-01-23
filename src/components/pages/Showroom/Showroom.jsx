@@ -7,7 +7,7 @@ export default function Showroom() {
   return (
     <ShowroomStyled>
       <Navbar/>
-      <p>Trendy Furniture</p>
+
       {/* <div className="main"> */}
         <MainShowroom/>
       {/* </div> */}
@@ -16,16 +16,11 @@ export default function Showroom() {
   )
 }
 const ShowroomStyled = styled.div`
+
+  background: #FF9843;
   width: 100%;
   height: 100vh;
   /* background: linear-gradient(#FF9843, #e66465); */
-
-  p {
-    font-size: 5em;
-    margin: 40px 0;
-    font-family: 'Satisfy', cursive;
-
-  }
 
   .main {
     width: 100%;
