@@ -1,11 +1,15 @@
 import styled from 'styled-components'
+import Button from './Button';
 
 export default function ItemRight({title, price, description}) {
   return (
     <ItemRightStyled>
-      <h1>{title}</h1>
-      <p>{description}</p>
-      <h3>{price} €</h3>
+      <div className='item-description'>
+        <h1>{title}</h1>
+        <p>{description}</p>
+        <h3>{price} €</h3>
+      </div>
+      <Button/>
     </ItemRightStyled>
   )
 }
