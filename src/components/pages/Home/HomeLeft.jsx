@@ -20,15 +20,15 @@ const HomeLeftStyled = styled.div`
 
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
+  box-shadow: 10px 5px 5px #e66465;
 
   p {
   text-align: center;
   margin: 0;
   font-size: 2em;
-
   background-image: linear-gradient(
     -225deg,
-    teal 0%,
+    white 0%,
     #ff1361 29%,
     #e66465 67%,
     #f27e56 100%
@@ -41,7 +41,7 @@ const HomeLeftStyled = styled.div`
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 3s linear infinite;
+  animation: textclip 4s linear infinite;
   display: inline-block;
 
   @keyframes textclip {

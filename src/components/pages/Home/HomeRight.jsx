@@ -8,10 +8,10 @@ export default function HomeRight() {
         <h1>Design & Trendy</h1>
         <h2>As your life style</h2>
       </div>
-      <p className='description'>
+      {/* <p className='description'>
         Discover our special selection of furnitures.
         Put more ✨glitters✨ in your life !
-      </p>
+      </p> */}
       <HomeCarousel/>
     </HomeRightStyled>
   )
@@ -27,20 +27,17 @@ const HomeRightStyled = styled.div`
 
     h1 {
       margin-bottom: 0;
-      box-shadow: 0 16px #e66465;
+      box-shadow: 60px 16px #e66465;
       font-size: 2.5em;
 
     }
     h2 {
       margin-top: 0;
       margin-bottom: 0;
+      color: #f27e56;
       /* box-shadow: 0 16px #f27e56 ; */
     }
   }
 
-  p{
-    font-size: 22px;
-    /* color: teal; */
-    margin: 0 10px;
-  }
+
 `
