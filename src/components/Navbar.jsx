@@ -1,9 +1,12 @@
 import styled from 'styled-components'
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <NavbarStyled>
-      <span>Design Heaven</span>
+      <Link to="/">
+        <span>Design Heaven</span>
+      </Link>
 
     </NavbarStyled>
   )
@@ -17,6 +20,10 @@ const NavbarStyled = styled.div`
   justify-content: center;
   font-family: 'Rubik Burned', system-ui;
   font-size: 2em;
-  color: #f27e56;
   border: 1px solid #f27e56;
+
+  a{
+    text-decoration: none;
+    color: #f27e56;
+  }
 `
