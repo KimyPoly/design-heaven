@@ -12,9 +12,19 @@ const ItemStyled = styled.div`
   width: 200px;
   height: 200px;
   position: relative;
+  border-radius: 50px;
+  /* margin: 0 50px; */
+
   img {
-    width: 250px;
-    height: 250px;
+    width: 270px;
+    height: 270px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 10px #e66465;
+    cursor: pointer;
+    
+    &:hover {
+    opacity: 0.8;
+  }
   }
 
   .img-title {

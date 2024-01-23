@@ -24,6 +24,14 @@ export const fakeFurnitures = [
     quantity: 0,
   },
   {
+    id: 6,
+    img: "https://th.bing.com/th/id/OIG.czo3NECOcdlu.kcn.orH?w=1024&h=1024&rs=1&pid=ImgDetMain",
+    title: "Woddy Set",
+    description: "Brighten up your space with our yellow armchair, synonymous with style and comfort. The vibrant shade brings a touch of vitality to your interior. Make every moment sunny",
+    price: 400.20,
+    quantity: 0,
+  },
+  {
     id: 4,
     img: "https://th.bing.com/th/id/OIG.ryuIT8RKU9Jk4nOWJQQh?w=1024&h=1024&rs=1&pid=ImgDetMain",
     title: "Yinky Blue",
@@ -31,4 +39,12 @@ export const fakeFurnitures = [
     price: 54.99,
     quantity: 0,
   },
+  {
+    id: 5,
+    img: "https://th.bing.com/th/id/OIG.Udz4CKZXjMZdfG1BDyLK?w=1024&h=1024&rs=1&pid=ImgDetMain",
+    title: "Crazy Table",
+    description: "Explore color harmony with our unique armchair in blue, pink and a touch of yellow. A bold fusion of trendy hues for a seat that transcends conventional design.",
+    price: 50.90,
+    quantity: 0,
+  }
 ]

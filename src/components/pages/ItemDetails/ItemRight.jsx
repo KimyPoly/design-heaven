@@ -15,10 +15,12 @@ const ItemRightStyled = styled.div`
   h1 {
     font-size: 4em;
     margin-top: 2em;
+    color:#e66465;
   }
 
   p {
     margin: 2em;
+    color:#FF9843;
   }
 
 `;

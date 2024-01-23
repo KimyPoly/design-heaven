@@ -49,7 +49,6 @@ const HomeCarouselStyled = styled.div`
   border-radius: 50px;
 
   &:hover {
-
     opacity: 0.8;
   }
 

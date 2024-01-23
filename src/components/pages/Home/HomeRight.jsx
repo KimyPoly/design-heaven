@@ -34,13 +34,13 @@ const HomeRightStyled = styled.div`
     h2 {
       margin-top: 0;
       margin-bottom: 0;
-      box-shadow: 0 16px #f27e56 ;
+      /* box-shadow: 0 16px #f27e56 ; */
     }
   }
 
   p{
     font-size: 22px;
-    color: teal;
-    margin: 0;
+    /* color: teal; */
+    margin: 0 10px;
   }
 `

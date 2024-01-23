@@ -9,7 +9,6 @@ export default function ItemDetails() {
 
   const { id } = useParams();
   const selectedItem = fakeFurnitures.find(item => item.id == id);
-  const { title, price, description, img } = selectedItem;
 
   return (
     <ItemDetailsStyled>
@@ -27,6 +26,7 @@ export default function ItemDetails() {
 }
 const ItemDetailsStyled = styled.div`
   height: 100vh;
+  background: #f5c2a8;
 
   .main-item {
     display: grid;
