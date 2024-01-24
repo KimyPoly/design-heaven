@@ -24,7 +24,9 @@ export default function HomeCarousel() {
 
   return (
     <HomeCarouselStyled>
-
+      <p className='description'>
+      ✨Discover our special selection of furnitures✨
+      </p>
      <Slider {...settings}>
         <div onClick={handleClick}>
           <img src="https://th.bing.com/th/id/OIG.FHYSoYoA3FR8VcpUcYhc?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Image 1" />
@@ -40,16 +42,20 @@ export default function HomeCarousel() {
     </HomeCarouselStyled>
   )
 }
+
 const HomeCarouselStyled = styled.div`
   width: 500px;
   height: 300px;
   margin: auto;
   cursor: pointer;
-  transition: border-radius 1s;
+  transition: box-shadow 0.5s;
   border-radius: 50px;
+  position: relative;
+
 
   &:hover {
-    opacity: 0.8;
+    /* opacity: 0.8; */
+    box-shadow: 10px 5px 5px #e66465;
   }
 
   img {
@@ -58,6 +64,17 @@ const HomeCarouselStyled = styled.div`
    object-fit: fill;
    transition: border-radius 1s;
    border-radius: 50px;
+   border-top: 2px solid #e66465;
+   border-bottom: 2px solid #e66465;
+  }
+  p{
+    font-size: 24px;
+    /* color: teal; */
+    margin-left: 1.5em;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    text-shadow: 10px 5px 5px #e66465  ;
   }
 
 `

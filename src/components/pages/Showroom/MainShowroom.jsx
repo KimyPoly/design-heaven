@@ -22,26 +22,54 @@ export default function MainShowroom() {
 
   return (
     <MainShowroomStyled >
-      {furniture.map((furnitureItem) => (
-       <Link key={furnitureItem.id} to={`/furnitures/${furnitureItem.id}`}>
-         <Item {...furnitureItem} />
-       </Link>
-      ))}
+      < div className='text'>
+        <p>Our Trendy Furnitures</p>
+      </div>
+      <div className='main-page'>
+        {furniture.map((furnitureItem) => (
+         <Link key={furnitureItem.id} to={`/furnitures/${furnitureItem.id}`}>
+           <Item {...furnitureItem} />
+         </Link>
+        ))}
+      </div>
     </MainShowroomStyled>
   )
 }
 const MainShowroomStyled = styled.div`
-  border-top: 3px solid white;
-  border-bottom: 2px solid white;
-  box-shadow: 0px 8px 20px 8px rgba(0, 0, 0, 0.2);
-  height: 60vh;
-  padding: 50px 50px 150px;
-
+  margin-top: 4em;
+  background: #FF9843;
+  box-shadow: 0px 8px 20px 8px rgba(0, 0, 0, 0.2) ;
+  height: 70%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 80px;
-  justify-items:center;
+  grid-template-columns: 1fr 3fr;
+  justify-items: center;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 
-  overflow-y: auto;
-  scroll-behavior: smooth;
+
+  .main-page {
+    padding-top: 1.5em;
+    padding-right: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-row-gap: 110px;
+    justify-items:center;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    width: 100%;
+    height: 66.5vh;
+    border-left: 5px solid white;
+  }
+
+  p {
+    font-size: 5em;
+    margin: 40px 0;
+    font-family: 'Satisfy', cursive;
+    color: white;
+  }
+
+  .text p {
+    padding-left: 0.3em;
+    padding-right: 0.3em
+  }
 `;

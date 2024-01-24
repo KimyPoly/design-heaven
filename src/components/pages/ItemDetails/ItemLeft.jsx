@@ -10,8 +10,8 @@ export default function ItemLeft({img}) {
 
 const ItemLeftStyled = styled.div`
   height: 100vh;
-  
   img {
+    box-shadow: 10px 5px 5px #e66465;
     height: 100vh;
     width: 100%;
     object-fit: cover;

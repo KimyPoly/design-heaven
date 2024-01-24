@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import { useParams } from 'react-router-dom';
 import { fakeFurnitures } from "../../../fakeData/fakeFurnitures.jsx";
-import Navbar from '../../Navbar.jsx';
 import ItemLeft from './ItemLeft.jsx';
 import ItemRight from './ItemRight.jsx';
 
@@ -12,7 +11,6 @@ export default function ItemDetails() {
 
   return (
     <ItemDetailsStyled>
-      {/* <Navbar/> */}
       <div className='main-item'>
        <ItemLeft img={selectedItem.img}/>
        <ItemRight
