@@ -25,6 +25,8 @@ const ItemRightStyled = styled.div`
   p {
     margin: 2em;
     color:#FF9843;
+    border: 2px solid white;
+    padding: 1em;
   }
 
 `;

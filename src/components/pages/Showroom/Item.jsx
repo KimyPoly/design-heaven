@@ -13,7 +13,6 @@ const ItemStyled = styled.div`
   height: 200px;
   position: relative;
   border-radius: 50px;
-  /* margin: 0 50px; */
 
   img {
     width: 270px;
@@ -21,7 +20,7 @@ const ItemStyled = styled.div`
     border-radius: 50px;
     box-shadow: 0 0 10px 10px #e66465;
     cursor: pointer;
-    
+
     &:hover {
     opacity: 0.8;
   }

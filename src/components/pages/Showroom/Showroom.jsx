@@ -16,8 +16,7 @@ export default function Showroom() {
   )
 }
 const ShowroomStyled = styled.div`
-
-  background: #FF9843;
+  background: #f5c2a8;
   width: 100%;
   height: 100vh;
   /* background: linear-gradient(#FF9843, #e66465); */

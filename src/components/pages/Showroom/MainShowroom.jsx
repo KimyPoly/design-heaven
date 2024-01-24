@@ -23,9 +23,9 @@ export default function MainShowroom() {
   return (
     <MainShowroomStyled >
       < div className='text'>
-        <p>Trendy Furnitures</p>
+        <p>Our Trendy Furnitures</p>
       </div>
-      <div className='main'>
+      <div className='main-page'>
         {furniture.map((furnitureItem) => (
          <Link key={furnitureItem.id} to={`/furnitures/${furnitureItem.id}`}>
            <Item {...furnitureItem} />
@@ -37,27 +37,28 @@ export default function MainShowroom() {
 }
 const MainShowroomStyled = styled.div`
   margin-top: 4em;
-  background: #f5c2a8;
-  /* border-top: 3px solid white;
-  border-bottom: 2px solid white; */
-  box-shadow: 0px 8px 20px 8px rgba(0, 0, 0, 0.2);
+  background: #FF9843;
+  box-shadow: 0px 8px 20px 8px rgba(0, 0, 0, 0.2) ;
   height: 70%;
-  /* padding: 0px 50px 150px 0; */
-
   display: grid;
   grid-template-columns: 1fr 3fr;
   justify-items: center;
-  overflow-y: auto;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 
-  .main {
-    padding-top: 2em;
+
+  .main-page {
+    padding-top: 1.5em;
     padding-right: 2em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-row-gap: 110px;
     justify-items:center;
     scroll-behavior: smooth;
+    overflow-y: auto;
     width: 100%;
+    height: 66.5vh;
+    border-left: 5px solid white;
   }
 
   p {
@@ -69,6 +70,6 @@ const MainShowroomStyled = styled.div`
 
   .text p {
     padding-left: 0.3em;
-
+    padding-right: 0.3em
   }
 `;
