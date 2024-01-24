@@ -57,7 +57,7 @@ const MainShowroomStyled = styled.div`
     scroll-behavior: smooth;
     overflow-y: auto;
     width: 100%;
-    height: 55vh;
+    height: 56.5vh;
     border-left: 5px solid white;
   }
 
