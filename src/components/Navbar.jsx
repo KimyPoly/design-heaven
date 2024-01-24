@@ -14,7 +14,7 @@ export default function Navbar() {
 const NavbarStyled = styled.div`
   width: 100%;
   height: 70px;
-  background: #e66465;
+  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,15 +22,16 @@ const NavbarStyled = styled.div`
   font-size: 2em;
   box-shadow: 0px 8px 20px 8px rgba(0, 0, 0, 0.2);
   border-bottom-left-radius: 50px;
-  
+  border: 2px solid #FF9843;
+
 
   a{
     text-decoration: none;
-    color: white;
+    color: #e66465;
     transition: color 1s;
 
     &:hover {
-      color: #f27e56;
+      color: #FF9843;
     }
   }
 `

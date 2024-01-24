@@ -37,9 +37,9 @@ export default function MainShowroom() {
 }
 const MainShowroomStyled = styled.div`
   margin-top: 4em;
-  background: #FF9843;
+  background: #f5c2a8;
   box-shadow: 0px 8px 20px 8px rgba(0, 0, 0, 0.2) ;
-  height: 70%;
+  height: 60%;
   display: grid;
   grid-template-columns: 1fr 3fr;
   justify-items: center;
@@ -57,7 +57,7 @@ const MainShowroomStyled = styled.div`
     scroll-behavior: smooth;
     overflow-y: auto;
     width: 100%;
-    height: 66.5vh;
+    height: 55vh;
     border-left: 5px solid white;
   }
 
