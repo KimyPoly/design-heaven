@@ -34,7 +34,7 @@ const FooterStyled = styled.div`
   justify-content: space-between;
 
 
-  background: #FF9843;
+  background: #f27e56;
   font-size: 2em;
 
   box-shadow: 0px 8px 20px 8px rgba(0, 0, 0, 0.2) ;
@@ -54,5 +54,6 @@ const FooterStyled = styled.div`
   p {
     font-size: 0.5em;
     color: white;
+    font-family: 'Noto Serif', serif;
   }
 `

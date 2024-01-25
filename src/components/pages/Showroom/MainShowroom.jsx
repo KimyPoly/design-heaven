@@ -42,23 +42,26 @@ const MainShowroomStyled = styled.div`
   height: 60%;
   display: grid;
   grid-template-columns: 1fr 3fr;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
   justify-items: center;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
 
 
   .main-page {
-    padding-top: 1.5em;
+    padding-top: 2.5em;
     padding-right: 2em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-row-gap: 110px;
+    grid-row-gap: 180px;
     justify-items:center;
     scroll-behavior: smooth;
     overflow-y: auto;
     width: 100%;
-    height: 56.5vh;
+    height: 54vh;
     border-left: 5px solid white;
+    margin-right: 1em;
+    justify-content: center;
   }
 
   p {
@@ -70,6 +73,7 @@ const MainShowroomStyled = styled.div`
 
   .text p {
     padding-left: 0.3em;
-    padding-right: 0.3em
+    padding-right: 0.3em;
+    font-family: 'Noto Serif', serif;
   }
-`;
+`

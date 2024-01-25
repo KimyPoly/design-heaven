@@ -35,7 +35,6 @@ const HomeRightStyled = styled.div`
       margin-top: 0;
       margin-bottom: 0;
       color: #f27e56;
-      /* box-shadow: 0 16px #f27e56 ; */
     }
   }
 

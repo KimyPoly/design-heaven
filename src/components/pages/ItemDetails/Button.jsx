@@ -9,7 +9,7 @@ export default function Button() {
   )
 }
 const ButtonStyled = styled.button`
-  background: #FF9843;
+  background: #f27e56;
   margin: 2em;
   padding: 1.5em;
   border: none;

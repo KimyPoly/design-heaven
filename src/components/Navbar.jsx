@@ -14,7 +14,7 @@ export default function Navbar() {
 const NavbarStyled = styled.div`
   width: 100%;
   height: 70px;
-  background: #FF9843;
+  background: #f27e56;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -15,8 +15,8 @@ const ItemStyled = styled.div`
   border-radius: 50px;
 
   img {
-    width: 270px;
-    height: 270px;
+    width: 280px;
+    height: 330px;
     border-radius: 50px;
     box-shadow: 0 0 10px 10px #e66465;
     cursor: pointer;
