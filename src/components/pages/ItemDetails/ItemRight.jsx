@@ -28,9 +28,10 @@ const ItemRightStyled = styled.div`
   p {
     margin: 2em;
     color: white;
-    border: 4px solid #FF9843;
+    border: 4px solid #f27e56;
     padding: 1em;
     font-size: 1em;
+    font-family: 'Noto Serif', serif;
   }
 
   h3 {
