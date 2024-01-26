@@ -29,7 +29,7 @@ const ItemStyled = styled.div`
   .img-title {
     font-size: 2em;
     position: absolute;
-    top: 80%;
+    top: 115%;
     color: #f27e56;
     padding-left: 1em;
     width: 100%;

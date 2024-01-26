@@ -49,6 +49,7 @@ const MainShowroomStyled = styled.div`
 
 
   .main-page {
+    cursor: pointer;
     padding-top: 2.5em;
     padding-right: 2em;
     display: grid;
@@ -59,7 +60,6 @@ const MainShowroomStyled = styled.div`
     overflow-y: auto;
     width: 100%;
     height: 54vh;
-    border-left: 5px solid white;
     margin-right: 1em;
     justify-content: center;
   }
