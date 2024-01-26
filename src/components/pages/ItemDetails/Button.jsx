@@ -14,6 +14,13 @@ const ButtonStyled = styled.button`
   padding: 1.5em;
   border: none;
   border-radius: 16px;
+  transition: background 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    background: #e66465;
+
+  }
 
   a {
     text-decoration: none;
