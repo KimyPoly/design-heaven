@@ -6,12 +6,8 @@ export default function HomeRight() {
     <HomeRightStyled>
       <div className='top-description'>
         <h1>Design & Trendy</h1>
-        <h2>As your life style</h2>
+        <h2>As your lifestyle</h2>
       </div>
-      {/* <p className='description'>
-        Discover our special selection of furnitures.
-        Put more ✨glitters✨ in your life !
-      </p> */}
       <HomeCarousel/>
     </HomeRightStyled>
   )
