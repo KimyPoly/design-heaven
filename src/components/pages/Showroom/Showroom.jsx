@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Navbar from '../../Navbar';
+import Navbar from '../../Navbar/Navbar.jsx';
 import MainShowroom from './MainShowroom';
 import Footer from '../../Footer';
 

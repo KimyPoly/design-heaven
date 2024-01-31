@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Link } from "react-router-dom";
+import Basket from './Basket';
 
 export default function Navbar() {
   return (
@@ -7,7 +8,7 @@ export default function Navbar() {
       <Link to="/">
         <span>Design Heaven</span>
       </Link>
-
+      <Basket/>
     </NavbarStyled>
   )
 }
