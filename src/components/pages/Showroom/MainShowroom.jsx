@@ -1,24 +1,13 @@
 import styled from 'styled-components'
 import Item from './Item';
 import { fakeFurnitures } from "../../../fakeData/fakeFurnitures.jsx";
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 
 export default function MainShowroom() {
 
   const [furniture, setFurniture] = useState(fakeFurnitures)
-  // const mainRef = useRef(null);
-
-  // useEffect(() => {
-  //   const scrollInterval = setInterval(() => {
-  //     if (mainRef.current) {
-  //       mainRef.current.scrollLeft += 1;
-  //     }
-  //   }, 10);
-
-  //   return () => clearInterval(scrollInterval);
-  // }, []);
 
   return (
     <MainShowroomStyled >
@@ -46,6 +35,7 @@ const MainShowroomStyled = styled.div`
   justify-items: center;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
+  
 
 
   .main-page {
