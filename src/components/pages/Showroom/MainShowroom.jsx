@@ -35,6 +35,7 @@ const MainShowroomStyled = styled.div`
   justify-items: center;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
+  
 
 
   .main-page {

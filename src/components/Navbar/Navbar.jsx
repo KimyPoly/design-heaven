@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Link } from "react-router-dom";
-import Basket from './Basket';
+import Basket from '../Basket/Basket';
 
 export default function Navbar() {
   return (
