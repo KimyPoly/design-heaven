@@ -2,10 +2,10 @@ import styled from 'styled-components'
 import { CiShoppingCart } from "react-icons/ci";
 
 
-export default function Basket() {
+export default function Basket({handleBasketClick}) {
   return (
     <BasketStyled>
-      <CiShoppingCart />
+      <CiShoppingCart onClick={handleBasketClick}/>
     </BasketStyled>
   )
 }
