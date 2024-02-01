@@ -40,4 +40,12 @@ const ItemRightStyled = styled.div`
     margin-bottom: 0;
   }
 
+  a {
+    text-decoration: none;
+    font-family: 'Satisfy', cursive;
+    color: white;
+    font-size: 1.5em;
+  }
+
+
 `
