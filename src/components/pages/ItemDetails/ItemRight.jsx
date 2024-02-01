@@ -9,7 +9,7 @@ export default function ItemRight({title, price, description}) {
         <p>{description}</p>
         <h3>{price} €</h3>
       </div>
-      <Button/>
+      <Button to="/showroom" label="Back to the showroom" />
     </ItemRightStyled>
   )
 }

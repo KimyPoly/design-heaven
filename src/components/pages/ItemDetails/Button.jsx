@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 import { Link } from "react-router-dom";
 
-export default function Button() {
+export default function Button({to, label }) {
   return (
-    <ButtonStyled>
-      <Link to="/showroom">Back to the showroom</Link>
+    <ButtonStyled as={to ? Link : 'button'} to={to} >
+      {label}
+      {/* <Link to="/showroom">Back to the showroom</Link> */}
     </ButtonStyled>
   )
 }
