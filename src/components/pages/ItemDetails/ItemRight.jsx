@@ -26,11 +26,14 @@ export default function ItemRight({title, price, description}) {
         <h1>{title}</h1>
         <p>{description}</p>
         <h3>{price} €</h3>
-        <div>
-        <button onClick={handleDecrement}>-</button>
-        <span>{quantity}</span>
-        <button onClick={handleIncrement}>+</button>
-      </div>
+
+        <div className='price-and-button'>
+          <button onClick={handleDecrement}>-</button>
+          <span> {quantity} </span>
+          <button onClick={handleIncrement}>+</button>
+          <Button to='/' label="Shop !"/>
+        </div>
+
       </div>
       <Button to="/showroom" label="Back to the showroom" />
     </ItemRightStyled>
