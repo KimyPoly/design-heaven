@@ -1,15 +1,41 @@
 import styled from 'styled-components'
 import Button from './Button';
+import { useState } from 'react';
 
 export default function ItemRight({title, price, description}) {
+
+  const [quantity, setQuantity]= useState(0)
+
+  const handleIncrement = () => {
+    if (quantity < 5) {
+      setQuantity(quantity + 1)
+    } else {
+      alert("Sorry ! You can't order more than 5 items");
+    }
+  }
+
+  const handleDecrement = () => {
+    if (quantity > 0) {
+      setQuantity(quantity - 1)
+    }
+  }
+
   return (
     <ItemRightStyled>
       <div className='item-description'>
         <h1>{title}</h1>
         <p>{description}</p>
         <h3>{price} €</h3>
+
+        <div className='price-and-button'>
+          <button onClick={handleDecrement}>-</button>
+          <span> {quantity} </span>
+          <button onClick={handleIncrement}>+</button>
+          <Button to='/' label="Shop !"/>
+        </div>
+
       </div>
-      <Button/>
+      <Button to="/showroom" label="Back to the showroom" />
     </ItemRightStyled>
   )
 }
@@ -39,5 +65,13 @@ const ItemRightStyled = styled.div`
     font-size: 3em;
     margin-bottom: 0;
   }
+
+  a {
+    text-decoration: none;
+    font-family: 'Satisfy', cursive;
+    color: white;
+    font-size: 1.5em;
+  }
+
 
 `

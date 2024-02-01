@@ -2,13 +2,13 @@ import styled from 'styled-components'
 import { Link } from "react-router-dom";
 import Basket from '../Basket/Basket';
 
-export default function Navbar() {
+export default function Navbar({handleBasketClick}) {
   return (
     <NavbarStyled>
-      <Link to="/">
+      <Link to="/" >
         <span>Design Heaven</span>
       </Link>
-      <Basket/>
+      <Basket handleBasketClick={handleBasketClick}/>
     </NavbarStyled>
   )
 }

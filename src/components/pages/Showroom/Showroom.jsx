@@ -3,13 +3,21 @@ import Navbar from '../../Navbar/Navbar.jsx';
 import MainShowroom from './MainShowroom';
 import Footer from '../../Footer';
 import BasketPreview from '../../Basket/BasketPreview.jsx';
+import { useState } from 'react';
 
 export default function Showroom() {
 
+  const [isBasketOpen, setIsBasketOpen] = useState(false);
+  // const [basketItems, setBasketItems] = useState([]);
+
+  const handleBasketClick = () => {
+    setIsBasketOpen(!isBasketOpen);
+  };
+
   return (
     <ShowroomStyled>
-      <Navbar/>
-      <BasketPreview/>
+      <Navbar handleBasketClick={handleBasketClick}/>
+      { isBasketOpen && <BasketPreview/> }
       <MainShowroom/>
       <Footer/>
     </ShowroomStyled>
