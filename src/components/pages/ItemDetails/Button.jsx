@@ -11,8 +11,8 @@ export default function Button({to, label }) {
 }
 const ButtonStyled = styled.button`
   background: #f27e56;
-  margin: 2em;
-  padding: 1.5em;
+  /* margin: 2em;
+  padding: 1.5em; */
   border: none;
   border-radius: 16px;
   transition: background 0.5s;

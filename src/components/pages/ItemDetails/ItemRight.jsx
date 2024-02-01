@@ -1,13 +1,36 @@
 import styled from 'styled-components'
 import Button from './Button';
+import { useState } from 'react';
 
 export default function ItemRight({title, price, description}) {
+
+  const [quantity, setQuantity]= useState(0)
+
+  const handleIncrement = () => {
+    if (quantity < 5) {
+      setQuantity(quantity + 1)
+    } else {
+      alert("Sorry ! You can't order more than 5 items");
+    }
+  }
+
+  const handleDecrement = () => {
+    if (quantity > 0) {
+      setQuantity(quantity - 1)
+    }
+  }
+
   return (
     <ItemRightStyled>
       <div className='item-description'>
         <h1>{title}</h1>
         <p>{description}</p>
         <h3>{price} €</h3>
+        <div>
+        <button onClick={handleDecrement}>-</button>
+        <span>{quantity}</span>
+        <button onClick={handleIncrement}>+</button>
+      </div>
       </div>
       <Button to="/showroom" label="Back to the showroom" />
     </ItemRightStyled>
