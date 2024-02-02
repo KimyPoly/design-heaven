@@ -20,6 +20,13 @@ export default function ItemRight({title, price, description}) {
     }
   }
 
+  const handleShopButtonClick = () => {
+
+    // onAddToBasket({ title, price, description, quantity });
+
+    setQuantity(0);
+  }
+
   return (
     <ItemRightStyled>
       <Button className='back-button' to="/showroom" label="Back to the showroom" />

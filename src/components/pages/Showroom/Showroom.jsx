@@ -8,17 +8,21 @@ import { useState } from 'react';
 export default function Showroom() {
 
   const [isBasketOpen, setIsBasketOpen] = useState(false);
-  // const [basketItems, setBasketItems] = useState([]);
+  const [basketItems, setBasketItems] = useState([]);
 
   const handleBasketClick = () => {
     setIsBasketOpen(!isBasketOpen);
-  };
+  }
+
+  const handleAddToBasket = (item) => {
+    setBasketItems([...basketItems, item]);
+  }
 
   return (
     <ShowroomStyled>
       <Navbar handleBasketClick={handleBasketClick}/>
-      { isBasketOpen && <BasketPreview/> }
-      <MainShowroom/>
+      { isBasketOpen && <BasketPreview basketItems={basketItems}/> }
+      <MainShowroom onAddToBasket={handleAddToBasket}/>
       <Footer/>
     </ShowroomStyled>
   )
