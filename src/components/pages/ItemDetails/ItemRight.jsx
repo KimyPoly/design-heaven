@@ -73,5 +73,25 @@ const ItemRightStyled = styled.div`
     font-size: 1.5em;
   }
 
+  .price-and-button {
+    margin-bottom: 1em;
+    color: white;
+    font-size: 1em;
+
+    button {
+      width: 3em;
+      height: 3em;
+      border-radius: 50%;
+      color: #f27e56;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #e66465;
+        color: white;
+      }
+    }
+  }
+
 
 `
