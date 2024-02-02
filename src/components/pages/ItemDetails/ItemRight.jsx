@@ -22,6 +22,7 @@ export default function ItemRight({title, price, description}) {
 
   return (
     <ItemRightStyled>
+      <Button className='back-button' to="/showroom" label="Back to the showroom" />
       <div className='item-description'>
         <h1>{title}</h1>
         <p>{description}</p>
@@ -35,7 +36,7 @@ export default function ItemRight({title, price, description}) {
         </div>
 
       </div>
-      <Button to="/showroom" label="Back to the showroom" />
+
     </ItemRightStyled>
   )
 }
@@ -79,6 +80,7 @@ const ItemRightStyled = styled.div`
     font-size: 1em;
 
     button {
+      margin: 1em;
       width: 3em;
       height: 3em;
       border-radius: 50%;
