@@ -1,11 +1,16 @@
 import styled from 'styled-components'
+import BasketCard from './BasketCard';
 
 export default function BasketItems({basket}) {
   return (
     <BasketItemsStyled>
        <ul>
           {basket.map((item) => (
-            <li key={item.id}>{item.title} - {item.quantity} - {item.price}</li>
+            <div className='basket-card' key={item.id}>
+            <BasketCard
+              {...item}
+            />
+          </div>
           ))}
         </ul>
     </BasketItemsStyled>
@@ -14,3 +19,4 @@ export default function BasketItems({basket}) {
 const BasketItemsStyled = styled.div`
 
 `;
+
