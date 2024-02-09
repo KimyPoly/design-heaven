@@ -4,11 +4,13 @@ import MainShowroom from './MainShowroom';
 import Footer from '../../Footer';
 import BasketPreview from '../../Basket/BasketPreview.jsx';
 import { useState } from 'react';
+import { useBasket } from '../../../hooks/useBasket.jsx';
 
 export default function Showroom() {
 
   const [isBasketOpen, setIsBasketOpen] = useState(false);
   const [basketItems, setBasketItems] = useState([]);
+  // const [basket] = useBasket()
 
   const handleBasketClick = () => {
     setIsBasketOpen(!isBasketOpen);

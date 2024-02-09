@@ -10,9 +10,13 @@ export const SMALL = [
   },
   {
     id: "2",
-    title: "Burger Meal",
+    title: "Yellow Confort",
     img: "https://th.bing.com/th/id/OIG.kUx84gkoCt2wr2RHEl7n?pid=ImgGn",
     price: 50.20,
     quantity: 3,
   },
 ]
+export const fakeBasket = {
+  EMPTY,
+  SMALL,
+}
