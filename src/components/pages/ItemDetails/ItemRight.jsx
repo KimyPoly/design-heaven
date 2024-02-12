@@ -20,8 +20,16 @@ export default function ItemRight({title, price, description}) {
     }
   }
 
+  const handleShopButtonClick = () => {
+
+    // onAddToBasket({ title, price, description, quantity });
+
+    setQuantity(0);
+  }
+
   return (
     <ItemRightStyled>
+      <Button className='back-button' to="/showroom" label="Back to the showroom" />
       <div className='item-description'>
         <h1>{title}</h1>
         <p>{description}</p>
@@ -35,7 +43,7 @@ export default function ItemRight({title, price, description}) {
         </div>
 
       </div>
-      <Button to="/showroom" label="Back to the showroom" />
+
     </ItemRightStyled>
   )
 }
@@ -71,6 +79,27 @@ const ItemRightStyled = styled.div`
     font-family: 'Satisfy', cursive;
     color: white;
     font-size: 1.5em;
+  }
+
+  .price-and-button {
+    margin-bottom: 1em;
+    color: white;
+    font-size: 1em;
+
+    button {
+      margin: 1em;
+      width: 3em;
+      height: 3em;
+      border-radius: 50%;
+      color: #f27e56;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #e66465;
+        color: white;
+      }
+    }
   }
 
 
